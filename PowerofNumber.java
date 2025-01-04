@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class PowerofNumber {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a number");
+		int num = scan.nextInt();
+		
+		System.out.println("Enter a power");
+		int pow = scan.nextInt();
+		
+		int res = findPower(num,pow);
+		System.out.println(res);
+	}
+	public static int findPower(int num, int pow)
+	{
+		int result =1;
+		for(int i=1;i<=pow;i++)
+		{
+			result = result *num;
+		}
+		return result;
+	}
+
+}
